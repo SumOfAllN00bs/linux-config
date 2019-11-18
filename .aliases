@@ -1,0 +1,14 @@
+alias cat="bat"
+alias dvp="setxkbmap us -variant dvp"
+alias fr="find . -name"
+alias gr="grep -ri"
+alias markdate="date +\"[%Y-%m-%d %a %H:%M]\""
+alias qwerty="setxkbmap us"
+alias q="exit"
+alias :q="exit"
+alias u="cd .."
+alias x="clear"
+checkgitaccount() {
+    git config --global user.name
+    git config --global user.email
+}
