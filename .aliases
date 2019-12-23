@@ -1,14 +1,29 @@
 alias cat="bat"
 alias dvp="setxkbmap us -variant dvp"
 alias fr="find . -name"
+alias g="git"
 alias gr="grep -ri"
+alias grep="grep --color=auto" # Color grep - highlight desired sequence.
+alias gt="gtypist -k -e 0"
+alias ls='ls -hN --color=auto --group-directories-first'
 alias markdate="date +\"[%Y-%m-%d %a %H:%M]\""
-alias qwerty="setxkbmap us"
+alias mkd="mkdir -pv"
+alias p="sudo pacman"
 alias q="exit"
 alias :q="exit"
+alias qwerty="setxkbmap us"
+alias sdn="sudo shutdown now"
+alias SS="sudo systemctl"
 alias u="cd .."
+alias v="nvim"
+alias sv="sudo nvim"
 alias x="clear"
+
 checkgitaccount() {
     git config --global user.name
     git config --global user.email
+}
+setgitaccount() {
+    git config --global user.name SumOfAllN00bs
+    git config --global user.email discordshards@gmail.com
 }

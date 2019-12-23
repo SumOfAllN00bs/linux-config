@@ -109,28 +109,10 @@ stty -ixon # Disable ctrl-s and ctrl-q.
 
 export GPG_TTY=$(tty)
 
-# System Maintainence
-alias sdn="sudo shutdown now"
-
-# Some aliases
-alias p="sudo pacman"
-alias SS="sudo systemctl"
-alias v="vim"
-alias sv="sudo vim"
-alias g="git"
-alias mkd="mkdir -pv"
-
-# Adding color
-alias ls='ls -hN --color=auto --group-directories-first'
-alias grep="grep --color=auto" # Color grep - highlight desired sequence.
-
-# Internet
-alias ethspeed="speedometer -r enp0s25"
-alias wifispeed="speedometer -r wlp3s0"
 
 export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(code {})+abort'"
 
 bindkey -v
 bindkey '^w' backward-kill-word
 bindkey '.,' vi-cmd-mode
-bindkey '^R' history-incremental-search-backward
+bindkey '^R' history-incremental-pattern-search-backward

@@ -24,11 +24,13 @@ syntax on
 syntax enable
 inoremap ., <Esc>
 
+let &colorcolumn=join(range(81,999),",")
+
 function! MyHighlights() abort
     highlight FoldColumn  cterm=NONE ctermbg=black                    gui=NONE guibg=black
     highlight Folded      cterm=NONE ctermbg=black                    gui=NONE guibg=black
-"    highlight Visual      cterm=NONE ctermbg=White   ctermfg=DarkGrey gui=NONE guibg=white    guifg=DarkGrey
-    highlight ColorColumn cterm=NONE ctermbg=magenta ctermfg=DarkGrey gui=NONE guifg=DarkGrey guibg=magenta
+"   highlight Visual      cterm=NONE ctermbg=White   ctermfg=DarkGrey gui=NONE guibg=white    guifg=DarkGrey
+    highlight ColorColumn cterm=NONE ctermbg=235 ctermfg=LightGrey gui=NONE guifg=LightGrey guibg=DarkGrey
 endfunction
 
 augroup MyColors
@@ -64,8 +66,10 @@ nmap <Leader>sf <C-w>_<C-w>|
 nmap <Leader>sn <C-w>=
 nmap <Leader>so <C-w>o
 nmap <Leader>st <C-w>t
+nmap <Leader>t :NERDTreeToggle<CR>
 nmap <Leader>vg :vsp<CR>:vimgrep
 nmap <Leader>vrc :tabedit $MYVIMRC<CR>
+nmap <Leader>q :q<CR>
 nnoremap <C-y> g+
 nnoremap <C-z> g-
 nnoremap <F1> :Utl<CR>
