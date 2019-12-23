@@ -6,6 +6,9 @@ Publicly available git repo of some files that are a stripped down and more vesa
 
 ## Files
 
+### .Xresources
+Some pretty colours for the terminal, developed in http://terminal.sexy/ and exported to various configs. For example: http://www.eclipsecolorthemes.org/?view=theme&id=58271 for eclipse.
+
 ### .aliases
 a whole lotta shortcuts for common commands
 
@@ -18,6 +21,9 @@ simplest profile file that handles some of my common setups
 
 ### .vimrc
 my dearest and most valued asset in all the world.
+
+### .xinitrc
+Barebones xinitrc, don't even need to add this really as long as you remember how to setup xresources which I never do.
 
 ### .zshrc
 Eh... I just got used to zsh and don't know what else to say.
