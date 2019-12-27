@@ -42,6 +42,7 @@ autocmd BufRead,BufNewFile *.md set tw=79
 autocmd BufWritePre * %s/\s\+$//e
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 colorscheme desert
+command! W write
 imap <C-s> <esc>:w<CR>
 map K <Nop>
 map <C-h> <C-w>h
@@ -102,6 +103,7 @@ set shiftwidth=4
 set shortmess=at
 set smarttab
 set softtabstop=4
+set spellfile=~/.mydict.utf-8.add
 set splitbelow
 set splitright
 set tabstop=4
