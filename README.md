@@ -20,13 +20,16 @@ somehow ended up being added in with the other configs
 simplest profile file that handles some of my common setups
 
 ### .tmux.conf
-some generic tmux configuration
+some generic tmux configuration stolen from many other places
 
 ### .vimrc
 my dearest and most valued asset in all the world.
 
 ### .zshrc
 Eh... I just got used to zsh and don't know what else to say.
+
+### config.h
+modifications made to my dwm config file
 
 ### commands.txt
 some common commands to get arch up and running in the way I like it to run.
