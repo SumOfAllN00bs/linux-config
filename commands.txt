@@ -1,8 +1,12 @@
+#/bin/sh
 # list commands to prepare arch
 sudo pacman -Syyu
-sudo pacman -S ack bat git fd nodejs npm tmux vim zsh
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-curl -Lo ~/install.sh https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh
+sudo pacman -S ack ashuffle bat chromium git fd mpd mpc ncmpcpp newsboat nodejs
+sudo pacman -S npm pulsemixer tmux vim yay zsh
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+curl -Lo ~/install.sh\
+https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh
 chmod +x ~/install.sh
 sh ~/install.sh
 mkdir -p ~/.vim/backup

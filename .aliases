@@ -8,6 +8,7 @@ alias gt="gtypist -k -e 0"
 alias ls='ls -hN --color=auto --group-directories-first'
 alias markdate="date +\"[%Y-%m-%d %a %H:%M]\""
 alias mkd="mkdir -pv"
+alias own="sudo chown sumofalln00bs:sumofalln00bs"
 alias p="sudo pacman"
 alias q="exit"
 alias :q="exit"
@@ -17,6 +18,7 @@ alias SS="sudo systemctl"
 alias u="cd .."
 alias v="nvim"
 alias sv="sudo nvim"
+alias smci="sudo make clean install"
 alias x="clear"
 
 checkgitaccount() {

@@ -53,6 +53,10 @@ map <C-p> "+P
 map <C-s> <esc>:w<CR>
 map <C-t> <esc>:tabnew<CR>
 map <F6> :setlocal spell! spelllang=en_us<CR>
+map <Leader>bd :bdelete<CR>
+map <Leader>bn :bnext<CR>
+map <Leader>bu :buffers<CR>
+map <Leader>ba :ball<CR>
 map <Leader>co mmggVG"*y`m
 map <Leader>ch :call matchadd('ColorColumn', '\%81v', 100)<CR>
 map <Leader>cn :call clearmatches()<CR>
@@ -88,7 +92,7 @@ set complete-=i
 set cursorline
 set encoding=utf-8
 set expandtab
-set foldenable
+set nofoldenable
 set foldmethod=syntax
 set hlsearch
 set incsearch
