@@ -29,7 +29,7 @@ static const Rule rules[] = {
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
 	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
-	{ "st",       "st",       NULL,       1 << 2,       0,           -1 },
+	{ "St",       NULL,       NULL,       1 << 2,       0,           -1 },
 };
 
 /* layout(s) */
@@ -72,10 +72,15 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,   XK_t,            spawn,          SPAWN("trc") },
 	{ MODKEY|ShiftMask,   XK_n,            spawn,          SPAWN("newsboat") },
 	{ MODKEY|ShiftMask,   XK_r,            spawn,          SPAWN("ranger") },
-	{ MODKEY|ShiftMask,   XK_w,            spawn,          SPAWN("chromium") },
+	{ MODKEY|ShiftMask,   XK_w,            spawn,          SHCMD("chromium") },
 	{ MODKEY|ShiftMask,   XK_semicolon,    spawn,          SPAWN("ncmpcpp") },
 	{ MODKEY|ShiftMask,   XK_p,            spawn,          SHCMD("mpc toggle")},
 	{ MODKEY|ShiftMask,   XK_a,            spawn,          SHCMD("ashuffle")},
+	{ MODKEY,             XF86XK_Launch5,  spawn,          SHCMD("blender")},
+	{ MODKEY,             XF86XK_Launch6,  spawn,          SHCMD("gimp")},
+	{ MODKEY,             XF86XK_Launch7,  spawn,          SHCMD("lmms")},
+	{ MODKEY,             XF86XK_Launch8,  spawn,          SHCMD("audacity")},
+	{ MODKEY,             XF86XK_Launch9,  spawn,          SHCMD("code")},
 	{ MODKEY,             XK_b,            togglebar,      {0} },
 	{ MODKEY,             XK_h,            focusstack,     {.i = +1 } },
 	{ MODKEY,             XK_l,            focusstack,     {.i = -1 } },
