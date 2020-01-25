@@ -1,0 +1,26 @@
+# News
+alias news3=tv3
+alias newsabc="mpv \"https://i.mjh.nz/au/Sydney/tv.101002210220.m3u8\""
+alias newseuro="mpv \"http://43.224.120.99:8080/euronews.m3u8\""
+alias newsf24="mpv \"http://f24hls-i.akamaihd.net/hls/live/221147/F24_EN_HI_HLS/master.m3u8\""
+alias newsgov="mpv \"https://i.mjh.nz/nz/tv.18.m3u8\""
+alias newsnewsy="mpv \"https://dai.google.com/linear/hls/event/0PopB0AoSiClAGrHVHBTlw/master.m3u8\""
+alias newsnhk="mpv \"https://nhkwlive-xjp.akamaized.net/hls/live/2003458/nhkwlive-xjp/index_2M.m3u8\""
+alias newsrt="mpv \"https://rt-news.secure.footprint.net/1103_2500Kb.m3u8\""
+alias newsrtdocs="mpv \"https://rt-doc.secure.footprint.net/1101_2500Kb.m3u8\""
+alias newssky1="mpv \"https://skynewsau-live.akamaized.net/hls/live/2002689/skynewsau-extra1/master.m3u8\""
+alias newssky2="mpv \"https://skynewsau-live.akamaized.net/hls/live/2002690/skynewsau-extra2/master.m3u8\""
+alias newssky3="mpv \"https://skynewsau-live.akamaized.net/hls/live/2002691/skynewsau-extra3/master.m3u8\""
+alias newsskyuk="mpv \"http://skydvn-nowtv-atv-prod.skydvn.com/atv/skynews/1404/live/06.m3u8\""
+
+# Normal
+alias tv1="mpv \"https://i.mjh.nz/nz/tv.9.m3u8\""
+alias tv2="mpv \"https://i.mjh.nz/nz/tv.10.m3u8\""
+alias tv3="mpv \"https://i.mjh.nz/nz/tv.11.m3u8\""
+alias tvabc_live="mpv \"https://abclive1-lh.akamaihd.net/i/abc_live10@420897/master.m3u8\""
+alias tveric="mpv \"http://adultswim-vodlive.cdn.turner.com/live/eric-andre/stream.m3u8\""
+alias tvlaststream="mpv \"https://adultswimhls-i.akamaihd.net/hls/live/249294/adultswim_5/main/1/stream.m3u8\""
+alias tvpretty="mpv \"https://adultswim-vodlive.cdn.turner.com/live/ypf/stream_7.m3u8\""
+alias tvprime="mpv \"https://i.mjh.nz/nz/tv.28.m3u8\""
+alias tvrick="mpv \"http://adultswim-vodlive.cdn.turner.com/live/rick-and-morty/stream.m3u8\""
+alias tvswim="mpv \"https://media.cdn.adultswim.com/streams/playlists/live-stream.primary.v2.m3u8\""

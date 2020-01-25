@@ -1,0 +1,52 @@
+# Tmux
+Prefix ^t
+    - s = select
+    - a = send ^t to client
+    - = = layout tiled
+    - r = reload config
+    - | = split vertical
+    - - = split horizontal
+    - y = synchronize panes
+    - q = Destroy all tmux sessions
+    - h = select left pane
+    - l = select right pane
+    - j = select down pane
+    - k = select up pane
+    - ^h = select window
+    - ^l = select window
+    - H = resize pane left
+    - L = resize pane right
+    - J = resize pane down
+    - K = resize pane up
+    - Escape = copy mode
+
+# VIM
+Leader = Space
+    - bd = buffer delete
+    - bn = buffer next
+    - bu = show buffers
+    - ba = open all buffers into splits
+    - co = copy whole buffer
+    - ch = column highlight 81st column (redundant now)
+    - cn = undo column highlight
+    - e = shortcut to editing on home path
+    - f = automatic formatting
+    - h = turn off highlight
+    - i = automatic indenting
+    - pi = PlugInstall
+    - pu = PlugUpdate
+    - sc = split create
+    - sf = ?
+    - sn = split normalize sizes
+    - so = split only (remove splits and fullscreen current split)
+    - st = ?
+    - t = Toggle Nerdtree
+    - vg = vimgrep in a split
+    - vrc = open vimrc
+F6 = spell check
+    - ]s = next mispelled word
+    - [s = previous mispelled word
+    - zg = add word as correct
+    - z= = suggest a word
+    - gv = reselect last selection
+
