@@ -31,6 +31,8 @@ function! MyHighlights() abort
     highlight Folded      cterm=NONE ctermbg=black                    gui=NONE guibg=black
 "   highlight Visual      cterm=NONE ctermbg=White   ctermfg=DarkGrey gui=NONE guibg=white    guifg=DarkGrey
     highlight ColorColumn cterm=NONE ctermbg=235 ctermfg=LightGrey gui=NONE guifg=LightGrey guibg=DarkGrey
+    " Try the following if your GUI uses a dark background.
+    highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
 endfunction
 
 augroup MyColors
@@ -39,7 +41,6 @@ augroup MyColors
 augroup END
 
 autocmd BufRead,BufNewFile *.md set tw=79
-autocmd BufWritePre * %s/\s\+$//e
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 colorscheme desert
 command! W write
@@ -53,6 +54,8 @@ map <C-p> "+P
 map <C-s> <esc>:w<CR>
 map <C-t> <esc>:tabnew<CR>
 map <F6> :setlocal spell! spelllang=en_us<CR>
+map <F9> :!cargo run<CR>
+map <F9> :!cargo run<CR>
 map <Leader>bd :bdelete<CR>
 map <Leader>bn :bnext<CR>
 map <Leader>bu :buffers<CR>
@@ -75,12 +78,14 @@ nmap <Leader>t :NERDTreeToggle<CR>
 nmap <Leader>vg :vsp<CR>:vimgrep
 nmap <Leader>vrc :tabedit $MYVIMRC<CR>
 nmap <Leader>q :q<CR>
+nnoremap <Leader>wn :match ExtraWhitespace /\S\zs\s\+$/<CR>
+nnoremap <Leader>wf :match<CR>
 nnoremap <C-y> g+
 nnoremap <C-z> g-
-nnoremap <F1> :Utl<CR>
 nnoremap <F3> :noh<CR>
+nnoremap <F8> 080lF r
 nnoremap S :%s//g<Left><Left>
-noremap <Leader>s :update<CR>
+nnoremap <Leader>s :update<CR>
 set autoindent
 set autoread
 set backspace=indent,eol,start
