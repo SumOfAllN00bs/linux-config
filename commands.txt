@@ -1,13 +1,27 @@
 #/bin/sh
 # list commands to prepare arch
+
+# install things
 sudo pacman -Syyu
-sudo pacman -S ack ashuffle bat chromium git fd mpd mpc ncmpcpp newsboat nodejs
-sudo pacman -S npm pulsemixer tmux vim yay zsh
+sudo pacman -S ack ashuffle bat broot chromium git fd mpd mpc ncmpcpp newsboat nodejs
+sudo pacman -S npm pulsemixer tmux vim vifm yay zsh
+
+# get vim-plug ready
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+# get oh-my-zsh ready
 curl -Lo ~/install.sh\
 https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh
 chmod +x ~/install.sh
-sh ~/install.sh
+sh ~/install.sh && rm ~/install.sh
+
+# set vim up with cleaner backup and custom dictionary
 mkdir -p ~/.vim/backup
 touch ~/.mydict.utf-8.add
+
+# setup custom scripts in /usr/local/bin/
+# sudo mkdir -p /usr/local/bin/
+# sudo chown YOURNAME:YOURGROUP ./scripts/*
+# sudo cp -rp ./scripts/* /usr/local/bin/
+# sudo chmod u+x /usr/local/bin/*
