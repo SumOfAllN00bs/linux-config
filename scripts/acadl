@@ -1,0 +1,7 @@
+#! /bin/zsh -
+# Sci-Hub's domain occasionally changes due to shutdowns:
+
+scihub="https://sci-hub.tw/"
+setsid curl -sO "$(curl -s "$scihub$*" | grep -Po "(?<=location.href='//).+.pdf")"
+
+zathura *.pdf(.om[1])

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [ -z "$(pidof mpv)" ]; then
+    [[ -f /tmp/mpv_pipe ]] || mkfifo /tmp/mpv_pipe
+    mpv --ytdl-format="bestvideo[height<=?720][fps<=?30][vcodec!=?vp9]+bestaudio/bestvideo[height<=720]+bestaudio/best" --force-window=yes --no-terminal --input-file="/tmp/mpv_pipe" "$1" &
+    while [ -z "$(pidof mpv)" ]; do
+        sleep 1
+    done
+else
+  echo "loadfile \"${1}\" append-play" >> /tmp/mpv_pipe
+fi

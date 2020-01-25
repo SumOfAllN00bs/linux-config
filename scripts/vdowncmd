@@ -1,0 +1,4 @@
+pactl set-sink-mute @DEFAULT_SINK@ false
+pactl set-sink-volume @DEFAULT_SINK@ -5%
+xsetroot -name "`pulsemixer --get-volume | awk '{print $1}'`% || `date +\"%I:%M %a %d/%m/%y\"` || `batstat`"
+

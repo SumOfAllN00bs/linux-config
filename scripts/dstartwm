@@ -1,0 +1,4 @@
+#!/bin/sh
+if [ "/dev/tty1" = "/dev/tty1" ]; then
+   exec startx ~/.xinitrc-dwm
+fi
