@@ -38,7 +38,7 @@ export UPDATE_ZSH_DAYS=30
 # DISABLE_LS_COLORS="true"
 
 # Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
+export DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
 # ENABLE_CORRECTION="true"
@@ -116,3 +116,5 @@ bindkey -v
 bindkey '^w' backward-kill-word
 bindkey '.,' vi-cmd-mode
 bindkey '^R' history-incremental-pattern-search-backward
+
+source /home/sumofalln00bs/.config/broot/launcher/bash/br
