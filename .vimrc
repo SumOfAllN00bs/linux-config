@@ -55,7 +55,6 @@ map <C-s> <esc>:w<CR>
 map <C-t> <esc>:tabnew<CR>
 map <F6> :setlocal spell! spelllang=en_us<CR>
 map <F9> :!cargo run<CR>
-map <F9> :!cargo run<CR>
 map <Leader>bd :bdelete<CR>
 map <Leader>bn :bnext<CR>
 map <Leader>bu :buffers<CR>
