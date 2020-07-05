@@ -117,4 +117,9 @@ bindkey '^w' backward-kill-word
 bindkey '.,' vi-cmd-mode
 bindkey '^R' history-incremental-pattern-search-backward
 
+function chpwd() {
+    emulate -L zsh
+    ls -a
+}
+
 source /home/sumofalln00bs/.config/broot/launcher/bash/br

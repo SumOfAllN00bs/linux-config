@@ -1,11 +1,12 @@
 source ~/.tvbindings
+alias 4k="~/4kvideodownloader/4kvideodownloader.sh"
+alias bookworm="com.github.babluboy.bookworm"
 alias cat="bat"
-alias dvp="setxkbmap us -variant dvp"
+alias dvp="setxkbmap us -variant dvp -option caps:super"
 alias fr="find . -name"
 alias g="git"
 alias gr="grep -ri"
 alias grep="grep --color=auto" # Color grep - highlight desired sequence.
-alias gt="gtypist -k -e 0"
 alias hide="sleep 1; xset dpms force off"
 alias ls='ls -hN --color=auto --group-directories-first'
 alias markdate="date +\"[%Y-%m-%d %a %H:%M]\""
@@ -13,6 +14,7 @@ alias mkd="mkdir -pv"
 alias own="sudo chown sumofalln00bs:sumofalln00bs"
 alias p="sudo pacman"
 alias Pro="cd ~/Projects"
+alias piw="cd ~/Documents/Plans/; v Programs_I_Want.txt"
 alias q="exit"
 alias :q="exit"
 alias qwerty="setxkbmap us"

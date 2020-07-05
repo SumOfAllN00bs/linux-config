@@ -76,6 +76,8 @@ nmap <Leader>st <C-w>t
 nmap <Leader>t :NERDTreeToggle<CR>
 nmap <Leader>vg :vsp<CR>:vimgrep
 nmap <Leader>vrc :tabedit $MYVIMRC<CR>
+nmap <Leader>vks :tabedit ~/KeyBindings.txt<CR>
+nmap <Leader>wc 'av'z
 nmap <Leader>q :q<CR>
 nnoremap <Leader>wn :match ExtraWhitespace /\S\zs\s\+$/<CR>
 nnoremap <Leader>wf :match<CR>

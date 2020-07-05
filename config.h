@@ -26,8 +26,10 @@ static const Rule rules[] = {
 	 *	WM_CLASS(STRING) = instance, class
 	 *	WM_NAME(STRING) = title
 	 */
-	/* class      instance    title       tags mask     isfloating   monitor */
-	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
+	/* class            instance    title       tags mask     isfloating   monitor */
+	{ "Gimp",           NULL,       NULL,       0,            1,           -1 },
+	{ "st",             NULL,       NULL,       0,            -1,          -1 },
+	{ "Vivaldi-stable", NULL,       NULL,       0,            0,           -1 },
 };
 
 /* layout(s) */
@@ -67,13 +69,15 @@ static Key keys[] = {
 	/* modifier           key              function        argument */
 	{ MODKEY,             XK_d,            spawn,          {.v = dmenucmd } },
     { MODKEY,             XK_Return,       spawn,          {.v = termcmd } },
-	{ MODKEY|ShiftMask,   XK_t,            spawn,          SPAWN("trc") },
-	{ MODKEY|ShiftMask,   XK_n,            spawn,          SPAWN("newsboat") },
-	{ MODKEY|ShiftMask,   XK_r,            spawn,          SPAWN("vifm") },
-	{ MODKEY|ShiftMask,   XK_w,            spawn,          SHCMD("chromium") },
-	{ MODKEY|ShiftMask,   XK_semicolon,    spawn,          SPAWN("ncmpcpp") },
-	{ MODKEY|ShiftMask,   XK_p,            spawn,          SHCMD("mpc toggle")},
-	{ MODKEY|ShiftMask,   XK_a,            spawn,          SHCMD("ashuffle")},
+	{ MODKEY,             XK_t,            spawn,          SPAWN("trc") },
+	{ MODKEY,             XK_n,            spawn,          SPAWN("newsboat") },
+	{ MODKEY,             XK_r,            spawn,          SPAWN("vifm") },
+	{ MODKEY,             XK_w,            spawn,          SHCMD("$BROWSER") },
+	{ MODKEY,             XK_semicolon,    spawn,          SPAWN("ncmpcpp") },
+	{ MODKEY,             XK_p,            spawn,          SHCMD("mpc toggle")},
+	{ MODKEY,             XK_a,            spawn,          SHCMD("ashuffle")},
+	{ MODKEY,             XK_minus,        spawn,          SHCMD("vdowncmd")},
+	{ MODKEY|ShiftMask,   XK_minus,        spawn,          SHCMD("vupcmd")},
 	{ MODKEY,             XF86XK_Launch5,  spawn,          SHCMD("blender")},
 	{ MODKEY,             XF86XK_Launch6,  spawn,          SHCMD("gimp")},
 	{ MODKEY,             XF86XK_Launch7,  spawn,          SHCMD("lmms")},
